@@ -1,4 +1,4 @@
-
+﻿
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -7,7 +7,7 @@ import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class kcposition {
+public class KCCM {
 	/** 
 	*@Project:KanColleCoordinatesMaker舰娘立绘坐标文件生成器
 	*@Author: a5566123s
