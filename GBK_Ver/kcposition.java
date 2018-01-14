@@ -35,7 +35,7 @@ public class kcposition {
 			String ch, ce;
 			ce = sc.nextLine();
 			ch = "\"" + ce;
-			File writename = new File("C:\\Users\\menyi\\Desktop\\" + ce + ".config.ini");//输出config.ini文件路径
+			File writename = new File("C:\\Users\\...\\Desktop\\" + ce + ".config.ini");//输出config.ini文件路径
 			writename.createNewFile(); // 创建新文件
 			BufferedWriter out = new BufferedWriter(new FileWriter(writename));
 			int i = str.indexOf(ch);
