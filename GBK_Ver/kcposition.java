@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class kcposition {
 	/** 
-	*@Project:KanColleCoordinates½¢ÄïÁ¢»æ×ø±êÎÄ¼şÉú³ÉÆ÷
+	*@Project:KanColleCoordinatesèˆ°å¨˜ç«‹ç»˜åæ ‡æ–‡ä»¶ç”Ÿæˆå™¨
 	*@Author: a5566123s
 	*@Date: 2018-1-13
 	*@Copyright: weibo.com/a5566123s All rights reserved. 
@@ -17,8 +17,8 @@ public class kcposition {
 	public static void main(String[] args) {
 		try {
 
-			/* ¶ÁÈëapi_start2ÎÄ¼ş */
-			String pathname = "C:\\Users\\menyi\\Desktop\\api_start2.txt";//ÊäÈëapiÎÄ¼şÂ·¾¶
+			/* è¯»å…¥api_start2æ–‡ä»¶ */
+			String pathname = "C:\\Users\\â€¦â€¦\\Desktop\\api_start2.txt";//è¾“å…¥apiæ–‡ä»¶è·¯å¾„
 			File filename = new File(pathname);
 
 			FileInputStream fInputStream = new FileInputStream(filename);
@@ -30,13 +30,13 @@ public class kcposition {
 				str = str + line;
 			}
 
-			System.out.println("ÇëÊäÈëswfÎÄ¼şÃû£º");
+			System.out.println("è¯·è¾“å…¥swfæ–‡ä»¶åï¼š");
 			Scanner sc = new Scanner(System.in);
 			String ch, ce;
 			ce = sc.nextLine();
 			ch = "\"" + ce;
-			File writename = new File("C:\\Users\\menyi\\Desktop\\" + ce + ".config.ini");//Êä³öconfig.iniÎÄ¼şÂ·¾¶
-			writename.createNewFile(); // ´´½¨ĞÂÎÄ¼ş
+			File writename = new File("C:\\Users\\menyi\\Desktop\\" + ce + ".config.ini");//è¾“å‡ºconfig.iniæ–‡ä»¶è·¯å¾„
+			writename.createNewFile(); // åˆ›å»ºæ–°æ–‡ä»¶
 			BufferedWriter out = new BufferedWriter(new FileWriter(writename));
 			int i = str.indexOf(ch);
 			int j = str.indexOf("}", i);
@@ -84,11 +84,11 @@ public class kcposition {
 				}
 			}
 
-			out.flush(); // °Ñ»º´æÇøÄÚÈİÑ¹ÈëÎÄ¼ş
-			out.close(); // ×îºó¼ÇµÃ¹Ø±ÕÎÄ¼ş
+			out.flush(); // æŠŠç¼“å­˜åŒºå†…å®¹å‹å…¥æ–‡ä»¶
+			out.close(); // æœ€åè®°å¾—å…³é—­æ–‡ä»¶
 			reader.close();
 			br.close();
-			System.out.println(ce + ".config.ini"+"×ø±êÎÄ¼şÉú³É³É¹¦£¡");
+			System.out.println(ce + ".config.ini"+"åæ ‡æ–‡ä»¶ç”ŸæˆæˆåŠŸï¼");
 
 		} catch (Exception e) {
 			e.printStackTrace();
