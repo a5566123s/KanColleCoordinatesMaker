@@ -18,7 +18,7 @@ public class KCCM {
 		try {
 
 			/* 读入api_start2文件 */
-			String pathname = "C:\\Users\\menyi\\Desktop\\api_start2.txt";//输入api文件路径
+			String pathname = "C:\\Users\\……\\Desktop\\api_start2.txt";//输入api文件路径
 			File filename = new File(pathname);
 
 			FileInputStream fInputStream = new FileInputStream(filename);
