@@ -11,8 +11,8 @@
 
 之前看到NGA上有dalao收集限定立绘期间的swf和config.ini坐标文件(https://bbs.ngacn.cc/read.php?tid=9507482)<br>
 但是很久没更新了。为了随时能使用翔鹤的圣诞立绘就自己写了下<br>
-目前没有图形界面（写了但是有Bug）<br>
-暂时先丢个java源文件（<br>
+详细说明见http://bbs.nga.cn/read.php?tid=13252143<br>
+<br>
 
 api_start2文件如何获取：https://bbs.ngacn.cc/read.php?tid=10045361
 
