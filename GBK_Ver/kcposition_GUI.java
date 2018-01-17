@@ -19,20 +19,20 @@ public class kcposition_GUI extends JFrame implements ActionListener {
 
 	kcposition_GUI() {
 		/** 
-		*@Project:KanColleCoordinatesMaker½¢ÄïÁ¢»æ×ø±êÎÄ¼şÉú³ÉÆ÷GUI
+		*@Project:KanColleCoordinatesMakerèˆ°å¨˜ç«‹ç»˜åæ ‡æ–‡ä»¶ç”Ÿæˆå™¨GUI
 		*@Author: a5566123s
 		*@Date: 2018-1-13
 		*@Copyright: weibo.com/a5566123s All rights reserved. 
 		*/  
-		this.setTitle("½¢ÄïÁ¢»æ×ø±êÎÄ¼şÉú³ÉÆ÷ V1.0");
+		this.setTitle("èˆ°å¨˜ç«‹ç»˜åæ ‡æ–‡ä»¶ç”Ÿæˆå™¨ V1.0");
 		Container cp = this.getContentPane();
-		cp.setLayout(new FlowLayout());// Á÷²¼¾Ö
-		tip = new JLabel("ÇëÑ¡Ôñapi_start2ÎÄ¼ş");
+		cp.setLayout(new FlowLayout());// æµå¸ƒå±€
+		tip = new JLabel("è¯·é€‰æ‹©api_start2æ–‡ä»¶");
 		main = new JTextField(24);
-		btn = new JButton("ä¯ÀÀ");
-		swf = new JLabel("ÇëÊäÈëswfÎÄ¼şÃû:");
+		btn = new JButton("æµè§ˆ");
+		swf = new JLabel("è¯·è¾“å…¥swfæ–‡ä»¶å:");
 		swfname = new JTextField(30);
-		btn2 = new JButton("Éú³É×ø±êÎÄ¼ş");
+		btn2 = new JButton("ç”Ÿæˆåæ ‡æ–‡ä»¶");
 
 		cp.add(tip);
 		cp.add(main);
@@ -44,6 +44,7 @@ public class kcposition_GUI extends JFrame implements ActionListener {
 		this.setSize(400, 180);
 		this.setLocation(700, 450);
 		this.setVisible(true);
+		this.setDefaultCloseOperation(3);
 		btn.addActionListener(this);
 		btn.setActionCommand("1");
 		btn2.addActionListener(this);
@@ -80,9 +81,9 @@ public class kcposition_GUI extends JFrame implements ActionListener {
 //				ce = sc.nextLine();
 				ch = "\"" + sc;
 				FileSystemView fsv = FileSystemView.getFileSystemView();
-				File com=fsv.getHomeDirectory();    //¶ÁÈ¡×ÀÃæÂ·¾¶
-				File writename = new File(com.getPath() +"\\"+ sc + ".config.ini");// Êä³öconfig.iniÎÄ¼şµ½Ïà¶ÔÂ·¾¶
-				writename.createNewFile(); // ´´½¨ĞÂÎÄ¼ş
+				File com=fsv.getHomeDirectory();    //è¯»å–æ¡Œé¢è·¯å¾„
+				File writename = new File(com.getPath() +"\\"+ sc + ".config.ini");// è¾“å‡ºconfig.iniæ–‡ä»¶åˆ°ç›¸å¯¹è·¯å¾„
+				writename.createNewFile(); // åˆ›å»ºæ–°æ–‡ä»¶
 				BufferedWriter out = new BufferedWriter(new FileWriter(writename));
 				int i = str.indexOf(ch);
 				int j = str.indexOf("}", i);
@@ -130,12 +131,12 @@ public class kcposition_GUI extends JFrame implements ActionListener {
 					}
 				}
 
-				out.flush(); // °Ñ»º´æÇøÄÚÈİÑ¹ÈëÎÄ¼ş
-				out.close(); // ×îºó¼ÇµÃ¹Ø±ÕÎÄ¼ş
+				out.flush(); // æŠŠç¼“å­˜åŒºå†…å®¹å‹å…¥æ–‡ä»¶
+				out.close(); // æœ€åè®°å¾—å…³é—­æ–‡ä»¶
 				reader.close();
 				br.close();
-//				System.out.println(sc+".config.ini"+"×ø±êÎÄ¼şÉú³É³É¹¦£¡");
-				JOptionPane.showMessageDialog(this, sc+".config.ini"+"ÒÑÔÚ×ÀÃæÉÏ³É¹¦Éú³É£¡");
+//				System.out.println(sc+".config.ini"+"åæ ‡æ–‡ä»¶ç”ŸæˆæˆåŠŸï¼");
+				JOptionPane.showMessageDialog(this, sc+".config.ini"+"å·²åœ¨æ¡Œé¢ä¸ŠæˆåŠŸç”Ÿæˆï¼");
 
 			} catch (Exception ex) {
 				ex.printStackTrace();
