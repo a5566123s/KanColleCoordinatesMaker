@@ -44,6 +44,7 @@ public class kcposition_GUI extends JFrame implements ActionListener {
 		this.setSize(490, 180);
 		this.setLocation(700, 450);
 		this.setVisible(true);
+		this.setDefaultCloseOperation(3);
 		btn.addActionListener(this);
 		btn.setActionCommand("1");
 		btn2.addActionListener(this);
